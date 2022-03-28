@@ -51,7 +51,7 @@ function akiraToriyama2() {
  return autor1
 }
 
-//Salve para o morro dos índios
+//Salve para o morro dos índios é isso
 
 console.log(akiraToriyama2());
 
