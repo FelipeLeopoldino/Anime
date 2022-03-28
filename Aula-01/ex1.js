@@ -42,10 +42,14 @@ const animes = [
 // Usar for...of
 
 function akiraToriyama2() {
-  for (let criador of animes) {
-    if (criador.autor === "Akira Toriyama") return criador;
-  }
+  for(let criador2 in animes){
+    if(animes[criador2].autor == "Akira Toriyama"){
+       return animes[criador2].autor
+    }
+    
+ }
 }
+
 
 console.log(akiraToriyama2(animes));
 
