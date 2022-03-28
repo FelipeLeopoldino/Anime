@@ -43,11 +43,20 @@ const animes = [
 
 function akiraToriyama2() {
   for (let criador of animes) {
-    if(animes[criador].autor == 'Akira Toriyama'){
-      return animes[criador].autor
+    let i = []
+    if (criador.autor == "Akira Toriyama") {
+      i.push(criador);
+    }return i
   }
 }
-}
+//    for(let criador2 in animes){
+//      if(animes[criador2].autor == "Akira Toriyama"){
+//         return animes[criador2]
+//      }
+
+//   }
+//}
+
 console.log(akiraToriyama2(animes));
 
 // Usar filter()
