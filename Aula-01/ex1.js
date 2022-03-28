@@ -42,22 +42,33 @@ const animes = [
 // Usar for...of
 
 function akiraToriyama2() {
+<<<<<<< HEAD
   for (let criador of animes) {
     let i = []
     if (criador.autor == "Akira Toriyama") {
       i.push(criador);
     }return i
   }
+=======
+  let autor1 = []
+  for(let criador in animes){
+    if(animes[criador].autor == "Akira Toriyama"){
+     autor1.push(animes[criador])
+    }
+ }
+ return autor1
+>>>>>>> 9aad306bf91d44888d33d59695c36ff2dded2dd8
 }
-//    for(let criador2 in animes){
-//      if(animes[criador2].autor == "Akira Toriyama"){
-//         return animes[criador2]
-//      }
+   for(let criador2 in animes){
+     if(animes[criador2].autor == "Akira Toriyama"){
+        return animes[criador2]
+     }
 
-//   }
-//}
+  }
 
-console.log(akiraToriyama2(animes));
+
+
+console.log(akiraToriyama2());
 
 // Usar filter()
 
