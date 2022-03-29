@@ -37,39 +37,36 @@ function akiraToriyama (){
     }return criador
 }
 
- console.log(akiraToriyama(animes))
+ //console.log(akiraToriyama(animes))
 
 //Usar for...of
 
 function akiraToriyama2() {
 
-  // for (let criador of animes) {
-  //   let i = []
-  //   if (criador.autor == "Akira Toriyama") {
-  //     i.push(criador);
-  //   }return i
-  // }
+  for (let criador of animes) {
+    let i = []
+    if (animes.autor == "Akira Toriyama" && "Akira Toriyama" == criador) {
+      //i.push(animes.autor);
+    }//return i
+  }
+}
+console.log(akiraToriyama2(animes));
 
+  //usar for...in
+
+  function akiraToriyama3(){
   let autor1 = []
   for(let criador in animes){
-    if(animes[criador].autor == "Akira Toriyama"){
+    if(animes[criador].autor === "Akira Toriyama"){
      autor1.push(animes[criador])
     }
- }
- return autor1
-
+ }return autor1
 }
-  //  for(let criador2 in animes){
-  //    if(animes[criador2].autor == "Akira Toriyama"){
-  //       return animes[criador2]
-  //    }
 
-  // }
-
-
-
-console.log(akiraToriyama2());
+//console.log(akiraToriyama3(animes));
 
 // Usar filter()
+let akiraToriyama4 = animes.filter(animes => animes.autor == "Akira Toriyama")
+//console.log(akiraToriyama4)
 
 //2 - Fazendo uso do método filter(), uma vez encontrado as obras do mestre Akira Toriyama, substitua o nome do autor pelo seu.
