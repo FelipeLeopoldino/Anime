@@ -51,7 +51,7 @@ function akiraToriyama2() {
   }
   return mestre;
 }
-//console.log(akiraToriyama2(animes));
+//console.log(akiraToriyama2(animes));git bra
 
 //usar for...in
 
