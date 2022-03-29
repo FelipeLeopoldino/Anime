@@ -38,7 +38,7 @@ function akiraToriyama() {
   return criador;
 }
 
-//console.log(akiraToriyama(animes))
+console.log(akiraToriyama(animes))
 
 //Usar for...of
 
@@ -51,7 +51,7 @@ function akiraToriyama2() {
   }
   return mestre;
 }
-//console.log(akiraToriyama2(animes));git bra
+console.log(akiraToriyama2(animes));
 
 //usar for...in
 
@@ -65,7 +65,7 @@ function akiraToriyama3() {
   return autor1;
 }
 
-//console.log(akiraToriyama3(animes));
+console.log(akiraToriyama3(animes));
 
 // Usar filter()
 let akiraToriyama4 = animes.filter(
@@ -79,4 +79,4 @@ const meuNome = animes.filter((animes) => {
     animes.autor = "Felipe Leopoldino";
   }
 });
-//console.log(animes)
+console.log(animes)
