@@ -50,7 +50,7 @@ function akiraToriyama2() {
     }//return i
   }
 }
-console.log(akiraToriyama2(animes));
+//console.log(akiraToriyama2(animes));
 
   //usar for...in
 
@@ -70,3 +70,9 @@ let akiraToriyama4 = animes.filter(animes => animes.autor == "Akira Toriyama")
 //console.log(akiraToriyama4)
 
 //2 - Fazendo uso do método filter(), uma vez encontrado as obras do mestre Akira Toriyama, substitua o nome do autor pelo seu.
+const meuNome = animes.filter(animes =>{
+  if(animes.autor == "Akira Toriyama"){
+    animes.autor = "Felipe Leopoldino"
+  }
+})
+//console.log(animes)
